@@ -1,0 +1,27 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "regions": ["bom1"],
+  "headers": [
+    {
+      "source": "/music/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/github", "destination": "https://github.com/girishlade111", "permanent": false },
+    { "source": "/instagram", "destination": "https://www.instagram.com/girish_lade_", "permanent": false },
+    { "source": "/ladestack", "destination": "https://www.ladestack.in", "permanent": false }
+  ]
+}

@@ -31,7 +31,12 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+.env
+.env.*
+!.env.example
+
+# music files - served from Cloudflare R2
+/public/music/*.mp3
 
 # vercel
 .vercel
