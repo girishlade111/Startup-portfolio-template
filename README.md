@@ -267,3 +267,6 @@ MIT License — Feel free to use this template for your own portfolio!
 ---
 
 Built with ❤️ using Next.js, Tailwind CSS, Framer Motion, and Three.js
+---
+
+**Built by Girish Lade** — https://ladestack.in
